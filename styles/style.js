@@ -1,6 +1,6 @@
 // On initialise la latitude et la longitude de Paris (centre de la carte)
-var lat = 43.388648;
-var lon = 5.16185;
+var lat = 44.19542;
+var lon = 5.94168;
 var map = null;
 // Fonction d'initialisation de la carte
 function initMap() {
@@ -9,7 +9,7 @@ function initMap() {
 		// Nous plaçons le centre de la carte avec les coordonnées ci-dessus
 		center: new google.maps.LatLng(lat, lon),
 		// Nous définissons le zoom par défaut
-		zoom: 17,
+		zoom: 18,
 		// Nous définissons le type de carte (ici carte routière)
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		// Nous activons les options de contrôle de la carte (plan, satellite...)
@@ -35,12 +35,12 @@ window.onload = function () {
 
 // Nous initialisons une liste de marqueurs
 var villes = {
-	MultiProject: { lat: 43.388648, lon: 5.16185 },
+	MultiProject: { lat: 44.19542, lon: 5.94168 },
 };
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: new google.maps.LatLng(lat, lon),
-		zoom: 17,
+		zoom: 18,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		mapTypeControl: true,
 		scrollwheel: false,
